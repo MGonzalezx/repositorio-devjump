@@ -35,15 +35,52 @@ Dentro del .gitignore, escribo las siguientes líneas para ignorar el archivo pr
 
 ## Añadir fichero
 * touch 1.txt
+
+## Crear una rama v0.2
 * git checkout -b v0.2
 * touch 1.txt
 * touch 2.txt
+
+## Crear rama remota
 * git push origin v0.2
 * git push --set-upstream origin v0.2
 * git add .
 * git commit -m "Creación de rama v0.2 con su respectivos archivos y carpetas junto con un .gitignore"
 * git push
+
+## Merge directo
 * git checkout main
 * git merge v0.2
 * git push
+
+## Merge con conflicto
+* git add .
+* git commit -m "Escribir Hola en el archivo 1.txt"
+* git checkout v0.2
+* git add .
+* git commit -m "Escribir Hola en el archivo 1.txt de la branch v0.2"
+* git checkout main
+* git merge v0.2
+
+## Listado de ramas
+
+### Investigar los comandos: --merged--no-merged
+
+Para averiguar el estado de las ramas, filtrarlas y mostrar solo aquellas que han sido fusionadas (o que no lo han sido) con la rama actualmente activa. Para ello, Git dispone de las opciones --merged y --no-merged.
+
+* git branch --merged
+* git branch --no-merged
+
+## Arreglar conflicto
+* Edite el 1.txt dejando lo que estaba en HEAD.
+* git add .
+* git commit -m "Resolviendo conflictos con branch v0.2"
+* git push
+
+## Borrar rama
+* git branch -d v0.2
+
+## Listado de cambios
+ 
+ ![alt text](../repositorio-devjump/Screenshot_3.png)
 
