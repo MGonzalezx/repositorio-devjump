@@ -82,5 +82,5 @@ Para averiguar el estado de las ramas, filtrarlas y mostrar solo aquellas que ha
 
 ## Listado de cambios
  
- ![alt text](../repositorio-devjump/Screenshot_3.png)
+ ![alt text](https://github.com/MGonzalezx/repositorio-devjump/blob/main/Screenshot_3.png)
 
